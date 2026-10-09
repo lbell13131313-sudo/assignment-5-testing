@@ -5,7 +5,7 @@ import Footer from './components/Footer'
 import CartPage from './pages/CartPage'
 import HomePage from './pages/HomePage'
 import ProductDetailsPage from './pages/ProductDetailsPage'
-import ProductPage from './pages/ProductPage'
+import ProductsPage from './pages/ProductsPage'
 
 import { useEffect, useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -97,7 +97,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />}/>
-        <Route path="/products" element={<ProductPage products={products} addToCart={addToCart}/>}/>
+        <Route path="/products" element={<ProductsPage products={products} addToCart={addToCart}/>}/>
         <Route path="/cart" element={<CartPage cart={cart} deleteFromCart={deleteFromCart}/>}/>
       </Routes>
       

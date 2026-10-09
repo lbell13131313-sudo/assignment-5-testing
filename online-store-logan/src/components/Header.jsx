@@ -10,11 +10,11 @@ function Header({store_name, length}) {
             
             <div className="menu-buttons">
                 <Link to={'/'} style={{ textDecoration: 'none', color: 'inherit' }}>
-                    <a>Home</a>
+                    <span>Home</span>
                 </Link>
 
                 <Link to={'/products'} style={{ textDecoration: 'none', color: 'inherit' }}>
-                    <a>Products</a>
+                    <span>Products</span>
                 </Link>
 
                 {/* functionality for the about page link will be added later */}
@@ -24,9 +24,9 @@ function Header({store_name, length}) {
 
             <Link to={'/cart'} className="cart-container"> 
                 <span className="cart-icon">🛒</span> 
-                <a className="cart-num">
+                <span className="cart-num">
                     {length}
-                </a>
+                </span>
             </Link>
         </div>
     );

@@ -1,6 +1,6 @@
 import ProductCard from '../components/ProductCard' // allows us to use the Product Card function from ProductCard.jsx
 
-function ProductPage({products, addToCart}) {
+function ProductsPage({products, addToCart}) {
     return (
         <div>
             {/* location that the products link will send you to*/}
@@ -26,4 +26,4 @@ function ProductPage({products, addToCart}) {
 }
 
 // Every component file must export the component
-export default ProductPage;
+export default ProductsPage;
