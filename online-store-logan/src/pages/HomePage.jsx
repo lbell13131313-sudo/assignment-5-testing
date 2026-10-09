@@ -1,10 +1,11 @@
 import Hero from '../components/Hero'
+import heroImg from '../assets/techProducts.png'
 
 function HomePage() {
     return (
         <div>
             <Hero
-                image="src\assets\techProducts.png"
+                image={heroImg}
             />
         </div>
     );

@@ -2,6 +2,7 @@ import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
+import AboutPage from './pages/AboutPage'
 import CartPage from './pages/CartPage'
 import HomePage from './pages/HomePage'
 import ProductDetailsPage from './pages/ProductDetailsPage'
@@ -99,6 +100,7 @@ function App() {
         <Route path="/" element={<HomePage />}/>
         <Route path="/products" element={<ProductsPage products={products} addToCart={addToCart}/>}/>
         <Route path="/cart" element={<CartPage cart={cart} deleteFromCart={deleteFromCart}/>}/>
+        <Route path="/about" element={<AboutPage />}/>
       </Routes>
       
       {/* location that the contact link will send you to*/}

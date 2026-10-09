@@ -18,8 +18,15 @@ function Header({store_name, length}) {
                 </Link>
 
                 {/* functionality for the about page link will be added later */}
-                <a>About</a>
+                {/* <a>About</a> */}
+                <Link to={'/about'} style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <span>About</span>
+                </Link>
+
                 <a href="#contact" style={{ textDecoration: 'none', color: 'inherit' }}>Contact</a>
+                {/*<Link to={'#contact'} style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <span>Contact</span>
+                </Link>*/}
             </div>
 
             <Link to={'/cart'} className="cart-container"> 
