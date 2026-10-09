@@ -1,7 +1,6 @@
 import './Hero.css' // allows me to use my custom css styles
 import { Link } from 'react-router-dom'
 
-// hero right now is just the image
 function Hero({image}) {
     return (
         <div className="hero">
