@@ -67,7 +67,7 @@ function App() {
       localStorage.setItem('cart', JSON.stringify(cart));
     } catch { 
       // if there is an error, the console log will notify the user
-      console.warn('Could not save cart to localStorage:', error); 
+      console.warn('Could not save cart to localStorage.'); 
     }
   }, [cart]);
 
