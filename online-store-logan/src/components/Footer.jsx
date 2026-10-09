@@ -11,8 +11,10 @@ function Footer({store_name, email, phone, address}) {
                 <a>{address}</a>
             </div>
             <div className="footer_buttons">
-                {/* functionality for the about, privacy policy, and terms of service page links will be added later */}
-                <a>About</a>
+                <Link to={'/about'} style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <span>About</span>
+                </Link>
+                {/* functionality for the privacy policy, and terms of service page links will be added later */}
                 <a>Contact</a>
                 <a>Privacy Policy</a>
                 <a>Terms of Service</a>
