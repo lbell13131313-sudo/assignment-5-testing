@@ -8,6 +8,12 @@ import HomePage from './pages/HomePage'
 import ProductDetailsPage from './pages/ProductDetailsPage'
 import ProductsPage from './pages/ProductsPage'
 
+import controller from "./assets/xboxController.png"
+import cd from "./assets/cdr.png"
+import vinylPlayer from "./assets/vinylrecordplayer.png"
+import iPhoneCase from "./assets/phonecase.png"
+import pcTower from "./assets/computertower.png"
+
 import { useEffect, useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
@@ -18,35 +24,35 @@ function App() {
       id: 1, 
       name: "Xbox Series X|S Controller", 
       price: 53.99, 
-      image: "https://placehold.co/300x200",
+      image: controller,
       description: "Game controller usable for Xbox Series X|S, PC, and Phone"
     },
     { 
       id: 2, 
       name: "80 Minute CD-Rs", 
       price: 7.99, 
-      image: "https://placehold.co/300x200",
+      image: cd,
       description: "10 pack of writeable CD-R discs"
     },
     { 
       id: 3, 
       name: "Vinyl Player", 
       price: 249.00, 
-      image: "https://placehold.co/300x200",
+      image: vinylPlayer,
       description: "Plays both fullsize vinyls and mini vinyls"
     },
     {
       id: 4,
       name: "iPhone Case",
       price: 29.49,
-      image: "https://placehold.co/300x200",
+      image: iPhoneCase,
       description: "Phone case for iPhone"
     },
     {
       id: 5,
       name: "HYTE Y70 Touch Infinite Tower",
       price: 399.99,
-      image: "https://placehold.co/300x200",
+      image: pcTower,
       description: "PC case with a touch screen function"
     }
   ];
