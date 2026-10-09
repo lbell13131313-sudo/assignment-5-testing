@@ -15,8 +15,8 @@ function Footer({store_name, email, phone, address}) {
                 <Link to={'/about'} style={{ textDecoration: 'none', color: 'inherit' }}>
                     <span>About</span>
                 </Link>
+                <a href="#contact" style={{ textDecoration: 'none', color: 'inherit' }}>Contact</a>
                 {/* functionality for the privacy policy, and terms of service page links will be added later */}
-                <a>Contact</a>
                 <a>Privacy Policy</a>
                 <a>Terms of Service</a>
             </div>
