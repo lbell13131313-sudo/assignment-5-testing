@@ -1,4 +1,5 @@
 import './Footer.css' // allows me to use my custom css styles
+import { Link } from 'react-router-dom'
 
 // footer uses two main portions that have different text arranged in rows in them
 function Footer({store_name, email, phone, address}) {
