@@ -9,6 +9,7 @@ describe('App', () => {
         );
 
         // if all of these are in the App then that means the page loaded correctly
-        
+
+        //expect(screen.queryByText('No Top Posts')).not.toBeInTheDocument();
     });
 });
