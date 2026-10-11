@@ -107,7 +107,7 @@ function App() {
         <Route path="/products" element={<ProductsPage products={products} addToCart={addToCart}/>}/>
         <Route path="/cart" element={<CartPage cart={cart} deleteFromCart={deleteFromCart}/>}/>
         <Route path="/about" element={<AboutPage />}/>
-        <Route path="/details" element={<ProductDetailsPage products={products} addToCart={addToCart}/>}/>
+        <Route path="/details/:identification" element={<ProductDetailsPage products={products} addToCart={addToCart}/>}/>
       </Routes>
       
       {/* location that the contact link will send you to*/}

@@ -9,9 +9,11 @@ function ProductsPage({products, addToCart}) {
             <div className="product-row">
                 {/* supplies the props to the ProductCard function in ProductCard.jsx */}
                 {/* much more condensed and reusable now than it was before */}
+                {/* products={p} */}
                 {products.map((p, index) => (
                     <ProductCard
                         key={`${p.id}-${index}`}
+                        products={p}
                         identification={p.id}
                         name={p.name}
                         price={p.price}

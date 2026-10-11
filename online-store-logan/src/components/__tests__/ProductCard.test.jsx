@@ -1,5 +1,11 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import ProductCard from '../ProductCard.jsx';
+import { BrowserRouter } from 'react-router-dom';
+
+// allows a render for a item that is part of the browserrouter
+const renderWithRouter = (component) => {
+  return render(<BrowserRouter>{component}</BrowserRouter>);
+};
 
 describe('ProductCard Button Test', () => {
     test('Product Card displayed correctly', () => {
@@ -7,7 +13,7 @@ describe('ProductCard Button Test', () => {
         const mockPress = vi.fn();
 
         // renders the ProductCard so it can do a test
-        render(
+        renderWithRouter(
             <ProductCard
                 key={1}
                 identification={1}

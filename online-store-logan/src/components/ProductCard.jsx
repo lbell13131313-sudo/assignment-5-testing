@@ -2,7 +2,7 @@ import './ProductCard.css' // allows me to use my custom css styles
 import { Link } from 'react-router-dom'
 
 // each card has the same format to help with a clean look
-function ProductCard({identification, name, price, image, description, onAddToCart}) {
+function ProductCard({ identification, name, price, image, description, onAddToCart}) {
     
     // formats the price to USD format including 2 decimal places and the $ in front
     const formattedCurrency = new Intl.NumberFormat('en-US', {
@@ -23,7 +23,7 @@ function ProductCard({identification, name, price, image, description, onAddToCa
                     <p>{description}</p>
                     <p className="price">{formattedCurrency}</p>
                     {/* sends you to the product details page */}
-                    <Link to={'/details'}>
+                    <Link to={`/details/${identification}`}>
                         <span>View Details</span>
                     </Link>
                 </a>
