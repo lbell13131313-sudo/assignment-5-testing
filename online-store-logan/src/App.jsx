@@ -12,7 +12,7 @@ import controller from "./assets/xboxController.png"
 import cd from "./assets/cdr.png"
 import vinylPlayer from "./assets/vinylrecordplayer.png"
 import iPhoneCase from "./assets/phonecase.png"
-import pcTower from "./assets/computertower.png"
+import pcTower from "./assets/computerTower.png"
 
 import { useEffect, useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
