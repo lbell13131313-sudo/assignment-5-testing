@@ -6,13 +6,13 @@ describe('ProductCard', () => {
         // renders the ProductCard so it can do a test
         render(
             <ProductCard
-                key={[]}
-                identification={[]}
-                name={[]}
-                price={[]}
-                image={[]}
-                description={[]}
-                onAddToCart={[]}
+                key={1}
+                identification={1}
+                name={'Mouse'}
+                price={4.99}
+                image={'https://placehold.co/300x200'}
+                description={'Computer mouse'}
+                onAddToCart={() => []}
             />
         );
 
