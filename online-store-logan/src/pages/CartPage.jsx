@@ -22,7 +22,7 @@ function CartPage({cart, deleteFromCart}) { // i have to use cart instead of pro
                     <>
                         {cart.map((c, index) => (
                             <CartItem
-                                key={index+1}
+                                key={`${c.id}-${index}`}
                                 identification={index}
                                 name={c.name}
                                 price={c.price}
