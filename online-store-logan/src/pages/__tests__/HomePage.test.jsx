@@ -7,7 +7,7 @@ const renderWithRouter = (component) => {
   return render(<BrowserRouter>{component}</BrowserRouter>);
 };
 
-describe('HomePage', () => {
+describe('HomePage Display Test', () => {
     test('Home Page displayed correctly', () => {
         // renders the HomePage so it can do a test
         renderWithRouter(

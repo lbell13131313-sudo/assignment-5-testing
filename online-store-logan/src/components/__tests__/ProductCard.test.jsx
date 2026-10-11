@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import ProductCard from '../ProductCard.jsx';
 
-describe('ProductCard', () => {
+describe('ProductCard Button Test', () => {
     test('Product Card displayed correctly', () => {
         // acts as a stand in for the onAddToCart
         const mockPress = vi.fn();
