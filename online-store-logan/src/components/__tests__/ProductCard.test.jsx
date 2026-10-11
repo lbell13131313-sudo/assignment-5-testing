@@ -19,8 +19,6 @@ describe('ProductCard', () => {
         // if all of these are in the ProductCard then that means the page loaded correctly
         expect(screen.getByRole('img')).toBeInTheDocument();
         
-        expect(screen.getByRole('button')).toBeInTheDocument();
-
-        expect(screen.getByText("Add to Cart")).toBeInTheDocument();
+        expect(screen.getByRole('button', { name: /add to cart/i })).toBeInTheDocument();
     });
 });
