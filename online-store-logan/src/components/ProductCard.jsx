@@ -1,4 +1,5 @@
 import './ProductCard.css' // allows me to use my custom css styles
+import { Link } from 'react-router-dom'
 
 // each card has the same format to help with a clean look
 function ProductCard({identification, name, price, image, description, onAddToCart}) {
@@ -21,14 +22,15 @@ function ProductCard({identification, name, price, image, description, onAddToCa
                     <h3>{name}</h3>
                     <p>{description}</p>
                     <p className="price">{formattedCurrency}</p>
+                    {/* sends you to the product details page */}
+                    <Link to={'/details'}>
+                        <span>View Details</span>
+                    </Link>
                 </a>
-                <button className="card-button" onClick = {() => onAddToCart(identification)}>
-                    View Details
-                </button>
-                <button className="card-button" onClick = {() => onAddToCart(identification)}> 
-                    Add to Cart
-                </button>
             </div>
+            <button className="card-button" onClick = {() => onAddToCart(identification)}> 
+                Add to Cart
+            </button>
         </div>
     );
 }
