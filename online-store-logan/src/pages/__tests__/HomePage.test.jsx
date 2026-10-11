@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import HomePage from '../HomePage';
+import HomePage from '../HomePage.jsx';
 
 describe('HomePage', () => {
     test('Home Page displayed correctly', () => {
@@ -12,7 +12,7 @@ describe('HomePage', () => {
         expect(screen.getByText("Welcome to Logan's Tech Shop!")).toBeInTheDocument();
         expect(screen.getByText("We have every piece of tech you could ask for!")).toBeInTheDocument();
 
-        expect(screen.getByRole('button')).toBeInTheDocument();
+        expect(screen.getByRole('Link')).toBeInTheDocument();
 
         expect(screen.getByText("Why Shop With Us?")).toBeInTheDocument();
 
